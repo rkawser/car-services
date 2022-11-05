@@ -1,0 +1,19 @@
+
+form {
+    background-color: aquamarine;
+    padding: 40px 0px ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 40px;
+    border: 0.6px solid black;
+}
+
+.reg-btn{
+    background-color: aqua;
+}
