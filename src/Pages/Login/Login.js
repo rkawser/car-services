@@ -1,9 +1,8 @@
 import { async } from '@firebase/util';
 import React, { useState } from 'react';
-import { ToastContainer } from 'react-bootstrap';
 import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword} from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { toast ,ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
 import SocialLogin from './Social/SocialLogin';
 
