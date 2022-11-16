@@ -1,14 +1,18 @@
+import { useEffect } from "react";
 import { useState } from "react"
 
 
-const useServices =()=>{
-    const [services,setServices]=useState([]);
+const useServices = () => {
+  const [services, setServices] = useState([]);
 
-    fetch('services.json')
-    .then(res=> res.json())
-    .then(data=> setServices(data))
+  useEffect(() => {
 
-  return[services,setServices]
+    fetch('http://localhost:5000/service')
+      .then(res => res.json())
+      .then(data => setServices(data))
+  }, [])
+  
+  return [services, setServices]
 }
 
-export default useServices ;
+export default useServices;

@@ -22,6 +22,8 @@ const Header = () => {
 
           </Nav>
           <Nav>
+
+            <Nav.Link as={Link} to="/manage">Manage</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             {user ?
               <button onClick={() => signOut(auth)} style={{ color: 'red',borderRadius:'5px', background:'black', }}>signOut</button>

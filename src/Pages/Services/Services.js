@@ -6,13 +6,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Services = () => {
-    const [services]=useServices({})
+    const [services]=useServices()
     return (
         <div id='service' className='my-5'>
             <h2 className='text-primary'>Our services</h2>
             <div className='row m-2'>
                 {
-                    services.map(service=> <Service key={service.id} service={service}></Service>)
+                    services.map(service=> <Service key={service._id} service={service}></Service>)
                 }
             </div>
         </div>
