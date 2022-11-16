@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useServices from '../../Hooks/Useservices';
 
 const Manage = () => {
@@ -29,7 +30,7 @@ const Manage = () => {
                        <p>name: {user.name}</p>
                        <img className='mx-2' src={user.img} height={30} alt="" />
                        <p className='mx-2'>Price: {user.price}</p>
-                       <Button className='mx-2' variant="outline-primary">update</Button>
+                       <Link to={`/update/${user._id}`}><Button className='mx-2' variant="outline-primary">update</Button></Link>
                        <Button onClick={()=>handleDeleService(user._id)} variant="outline-danger">X</Button>
                     </div>)
                 }

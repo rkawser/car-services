@@ -11,6 +11,8 @@ import NotFound from './Pages/NotFound/NotFound';
 import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 import Manage from './Pages/Manage/Manage';
 import AddService from './Pages/AddService/AddService';
+import Update from './Pages/Update';
+
 
 function App() {
 
@@ -30,6 +32,7 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/manage' element={<Manage></Manage>}></Route>
         <Route path='/addservice' element={<AddService></AddService>}></Route>
+        <Route path='/update/:id' element={<Update></Update>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       {/* <Footer></Footer> */}
